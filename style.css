@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Dancing Script', cursive 'Zilla Slab', serif; 
     margin: 0;
     padding: 0;
     background-color: #eeedf0;
@@ -58,17 +58,16 @@ h3{
 .Portfolio-continer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 30px;
 
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
-}
-
-.project h3 {
-    margin: 10px 0;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
 }
 
 .about {
