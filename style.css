@@ -5,14 +5,66 @@ body {
     background-color: #eeedf0;
 }
 
-.hero__wrapper{
+#topnav{
+    position: fixed;
     display: flex;
     justify-content: space-around;
-    min-height: 500px;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    z-index: 1000;
+}
+
+.active{
+    color: #4e4e4e;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
+#myLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{ 
+    display: none;
+}
+
+#myLinks a {
+    color: black;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#myLinks a:hover{
+    border-radius: 0px;
+    border-bottom: 3px solid #bc5374;
+}
+
+.shape{
+    background-color: #bc5374;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 560px;
+}
+
 .hero__wrapper p {
+    width: 400px;
     color: gray;
 }
 
@@ -39,7 +91,7 @@ h3{
 .hero__wrapper--right {
     position: absolute;
     left: 55%;
-    top: 0px;
+    top: 60px;
     display: flex;
 }
 
@@ -47,31 +99,111 @@ h3{
     height: 500px;
 }
 
-.portfolio {
-    background-color: #ffffff;
+#links{
+    position: fixed;
+    background-color:  rgba(215, 194, 193, 0.544);
+    top: 180px;
+    left: 30px;
+    border-radius: 10px;
+}
+
+.links__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.links__wrapper a{
+    color: #bc5374;
+    padding: 15px;
+
+}
+
+#portfolio {
+    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 80px 100px;
+    padding: 50px 100px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uiDesign{
+    display: flex;
+    flex-direction: row;
+    height: 405px;
+    width: 600px;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+.uiDesign img{
+    position: relative;
+    height: 405px;
+    top: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.uiDesign-detaile{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.project__title{
+    color: #4e4e4e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .Portfolio-continer{
+    margin: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.project h3{
+    margin: 10px;
+}
+
+.project a{
+    text-decoration: none;
+    color: #bc5374;
 }
 
 .project img {
     border-radius: 20px;
-    height: 150px;
-    width: 200px;
+    height: 300px;
+    width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
 }
 
-.about {
-    background-color: #bc5374;
+#about {
+    background-color: hsl(341, 44%, 53%);
     color: #fff;
     display: flex;
     align-items: center;
@@ -90,30 +222,18 @@ h3{
     width: 40%;
 }
 
-.contact {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 footer {
+    background-color: white;
     color: #bc5374;
     text-align: center;
     padding: 10px 0;
 }
 
 button{
-    background-color: #bc5374;
+    background-color: rgb(215, 194, 193, 0.544);
     border: none;
-    color: #ffffff;
+    color: #bc5374;
+    font-size: larger;
     padding: 10px;
     margin-top: 15px;
     border-radius: 10px;
@@ -127,7 +247,7 @@ button{
 @media only screen and (max-width: 1224px) {
 
     .hero__wrapper{
-        min-height: 750px;
+        min-height: 800px;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -135,22 +255,74 @@ button{
     }
     .hero__wrapper--left{
         position: absolute;
-        top: 20px;
+        top: 70px;
         margin-left: 0px;
     }
 
     .hero__wrapper--right{
-        top: 250px;
+        top: 300px;
         left: 25%;
     }
 }
 @media only screen and (max-width: 950px) {
+
+    #topnav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    #topnav #myLinks {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        background-color: #4e4e4e;
+        width: 100%;
+        display: none;
+        top: 75px;
+        right: 0;
+        z-index: 1000;
+        padding: 20px 0px;
+    }
+
+    #myLinks a{
+        color: white;
+        padding-top: 10px;
+    }
+
+    #topnav a {
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    
+    #topnav a.icon {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+    
+    .active {
+        color: #4e4e4e;
+        margin-left: 30px;
+    }
 
     .Portfolio-continer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
         gap: 50px;
+    }
+
+    .hero__wrapper--right {
+        position: absolute;
+        left: 25%;
+        top: 300px;
+        display: flex;
     }
 }
 
@@ -173,6 +345,13 @@ button{
     .about-container p{
         width: 70%;
     }
+
+    .hero__wrapper--right {
+        position: absolute;
+        left: 12%;
+        top: 300px;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -182,7 +361,7 @@ button{
         grid-template-columns: repeat(1, 1fr);
     }
     .hero__wrapper{
-        min-height: 470px;
+        min-height: 530px;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -206,7 +385,7 @@ button{
     } 
 
     .hero__wrapper--right{
-        top: 200px;
+        top: 260px;
         left: 25%;
     }
     .hero__wrapper--right img{
@@ -216,6 +395,6 @@ button{
 @media only screen and (max-width: 420px) {
 
     .hero__wrapper--right{
-        left: 20%;
+        left: 15%;
     }
 }

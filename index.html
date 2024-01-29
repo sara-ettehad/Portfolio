@@ -4,18 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parisa Ettehad - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Parisa Ettehad - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="topnav">
+        <div class="active">
+            <div class="shape"></div>
+            <h1>Parisa Ettehad</h1>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div id="myLinks">
+            <a href="#hero">About me</a>
+            <a href="./image/ParisaUIDesign.pdf">Resume</a>
+            <a href="#portfolio">Projects</a>
+        </div>
+    </div>
+
     <div id="hero">
         <div class="hero__wrapper">
             <div class="hero__wrapper--left">
-                <h4>Hello</h4>
-                <h1>I'm Parisa</h1>
-                <p class="paragraph">Graphic Designer & UI Designer</p>
-                <a href="./image/ParisaUIDesign.pdf"><button> Resume </button></a>
+                <div style="display: flex; bottom: 0;"><h2 style="color: #4e4e4e; margin-right: 10px;">Hello!</h2>
+                    <h2 style="color: #4e4e4e;"> I am Parisa Ettehad</h2></div>
+                <h2 style="margin-top: 0px; color: #bc5374;">UI Engineer</h2>
+                <p class="paragraph">Hey there, I'm Parisa! With a bachelor's degree in Computer Engineering, I've cultivated a set of skills that defines me as a creative and open-minded individual. Having contributed as a UI Designer and Front-End Developer within agile frameworks, I bring a dynamic approach to my work. Explore my resume and projects for a deeper insight into my journey and professional expertise. Thank you for taking the time to learn more about me!</p>
+                    <a href="./image/ParisaUIDesign.pdf"><button> Resume </button></a>
+
             </div>
 
             <div class="hero__wrapper--right">
@@ -27,10 +46,79 @@
         
     </div>
 
-    <section class="portfolio">
-        <h1 style="color: #bc5374; text-align: center; font-size: 30px;">Projects</h1>
-        <div class="Portfolio-continer">
+    <div id="links">
 
+        <div class="links__wrapper">
+            <a href="https://www.linkedin.com/in/parisa-ettehad/"><i class="fa fa-linkedin-square"></i></a>
+            <a href=mailto:"parisa98ettehad@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://dribbble.com/parisa-ettehad"><i class="fa fa-dribbble"></i></a>
+            <a href="https://github.com/parisa-ettehad"><i class="fa fa-github"></i></a>
+        </div>
+
+    </div>
+
+    <section id="portfolio">
+        <div class="project__title">
+            <div class="shape"></div>
+            <h1>UI Design Projects</h1>
+        </div>
+
+        <div class="projects">
+
+            <div class="uiDesign">
+                <div  class="uiDesign-detaile">
+                    <h2 style="color: #4e4e4e;">Best Chef</h2>
+                    <h5>Role: UI Designer</h5>
+                    <p>A cook learning website that make your cooking easier.</p>
+                    <button>Details</button>
+                </div>
+
+                <div>
+                    <img src="./image/Capture.PNG" alt="Project 2">
+                </div>
+            </div>
+            <div class="uiDesign">
+                <div  class="uiDesign-detaile">
+                    <h2 style="color: #4e4e4e;">Sanjob Chat</h2>
+                    <h5>Role: UI Designer</h5>
+                    <p>A chat platform for Sanjob website that help you comunication wit sanjob members.</p>
+                    <button>Details</button>
+                </div>
+
+                <div>
+                    <img src="./image/Sanjob.PNG" alt="Project 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="project__title">
+            <div class="shape"></div>
+            <h1>Front-End Projects</h1>
+        </div>
+
+        <div class="Portfolio-continer">
+            
+            <div class="project">
+                <a>
+                    <img src="./image/ss.png" alt="Fashion-Page">
+                </a>
+                <h3>Fashion website</h3>
+                <button><a href="https://parisa-ettehad.github.io/fashion/">Visit</a></button>
+            </div>
+            <div class="project">
+                <a>
+                    <img src="./image/pjstudio.PNG" alt="PJ-Studio-Page">
+                </a>
+                <h3>PJ-Studio website</h3>
+                <button><a href="https://parisa-ettehad.github.io/PJ-Studio-online/">Visit</a></button>
+            </div>
+        </div>
+
+            <div class="project__title">
+                <div class="shape"></div>
+                <h1>Graphic Design Projects</h1>
+            </div>
+        <div class="Portfolio-continer">    
             <div class="project">
                 <a>
                     <img src="./image/IMG_6057.JPEG" alt="Fashion-Page">
@@ -50,56 +138,17 @@
                 </a>
             </div>
 
-            <div class="project">
-                <a href="https://dribbble.com/shots/23275882-Avatar">
-                    <img src="./image/Screenshot (916).PNG" alt="Fashion-Page">
-                </a>
-            </div>
-
-            <div class="project">
-                <a href="https://parisa-ettehad.github.io/fashion/">
-                    <img src="./image/ss.png" alt="Fashion-Page">
-                </a>
-            </div>
-
-            <div class="project">
-                <a href="https://dribbble.com/shots/22997824-Best-Chef">
-                    <img src="./image/bestChef1.png" alt="Project 2">
-                </a>
-            </div>
-
-            <div class="project">
-                <a href="https://dribbble.com/shots/23029885-Sanjob-ChatPage">
-                    <img src="./image/Chat.PNG" alt="Project 2">
-                </a>
-            </div>
-
-            <div class="project">
-                <a href="https://dribbble.com/shots/23088272-Sanjob">
-                    <img src="./image/Untitled-1.png" alt="Project 2">
-                </a>
-            </div>
-            <!-- Add more projects as needed -->
+            
+            
+            
         </div>
+        
+
+        
     </section>
 
-    <section class="about">
-        <h1 style="color: #ffff;">About Me</h1>
-        <div class="about-container">
-            <img style="height: 300px;" src="./image/photo_2023-08-16_13-03-38.jpg">
-            <p>A UI designer with 3 years of experience, I thrive in utilizing design tools such as Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign), and Canva and seamlessly collaborating with UX teams and team members. My skill set encompasses creating interactive prototypes and a solid command of HTML, CSS, and JavaScript. Specializing in responsive design, I prioritize usability, layout, color theory, and typography. A meticulous approach ensures that my designs are pixel-perfect and aligned with the overall vision, while efficient workflow management enables me to meet deadlines across multiple projects. Committed to learning and adaptability, I enthusiastically embrace new tools and methodologies. Open to constructive feedback, I bring a proactive and positive attitude. Fluent in English and currently learning French, I am eager to contribute to the success of your team.</p>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="contact-container">
-            <h1 style="color: #bc5374;">Contact</h1>
-            <p style="color: #4e4e4e;"><span style="font-weight: bold;">Email:</span> parisa98ettehad@gmail.com</p>
-            <p style="color: #4e4e4e;"><span style="font-weight: bold;">LinkedIn:</span> linkedin.com/in/parisa-ettehad</p>
-            <p style="color: #4e4e4e;"><span style="font-weight: bold;">GitHub:</span> github.com/parisa-ettehad</p>
-            <!-- Add more contact information as needed -->
-        </div>
-    </section>
+    
+    
 
     <footer>
         <div class="container">
@@ -109,3 +158,5 @@
 </body>
 
 </html>
+
+<script src="./script.js"></script>
