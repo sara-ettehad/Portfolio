@@ -328,6 +328,15 @@ button{
 }
 
 @media only screen and (max-width: 768px) {
+    
+    .shape{
+        height: 15px;
+        width: 15px;
+    }
+
+    .active h1{
+        font-size: 20px
+    }
 
     .hero__wrapper h2{
         font-size: 20px;
@@ -419,21 +428,25 @@ button{
         flex-direction: column;
     }
 
-    .hero__wrapper--left{
-        margin-left: 0px;
-        margin-top: 30px;
+    #links{
+        left: 10px;
+    }
+
+    .links__wrapper a{
+        padding: 9px;
     }
 
     .hero__wrapper--left h1{
-        font-size: 30px;
+        font-size: 10px;
         margin: 0px;
     }
 
     .hero__wrapper--left h4{
         margin: 5px;
     } 
-    .hero__wrapper--left p{
-        margin: 5px;
+
+    .paragraph{
+        font-size: small;
     } 
 
     .hero__wrapper--right{
@@ -459,6 +472,13 @@ button{
     }
 }
 @media only screen and (max-width: 440px) {
+    .hero__wrapper--left{
+        width: 40%;
+    }
+
+    #hero p{
+        font-size: smaller;
+    }
 
     .hero__wrapper--right{
         left: 18%;
@@ -486,5 +506,18 @@ button{
     .project img{
         height: 200px;
         width: 300px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .active{
+        margin: 0px 5px;
+    }
+
+    #hero h2{
+        font-size: small;
+    }
+
+    #hero p{
+        font-size: smaller;
     }
 }
