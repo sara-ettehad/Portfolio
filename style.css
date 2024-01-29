@@ -247,21 +247,31 @@ button{
 @media only screen and (max-width: 1224px) {
 
     .hero__wrapper{
-        min-height: 800px;
+        height: 950px;
         display: flex;
         text-align: center;
         flex-direction: column;
 
     }
     .hero__wrapper--left{
+        display: flex;
         position: absolute;
         top: 70px;
-        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .hero__wrapper--right{
-        top: 300px;
-        left: 25%;
+        top: 450px;
+        left: 30%;
+    }
+
+    .Portfolio-continer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 50px;
     }
 }
 @media only screen and (max-width: 950px) {
@@ -273,30 +283,28 @@ button{
     flex-direction: row;
     align-items: center;
     }
-    
-    #topnav #myLinks {
-        position: absolute;
-        display: flex;
-        text-align: center;
-        background-color: #4e4e4e;
-        width: 100%;
-        display: none;
-        top: 75px;
-        right: 0;
-        z-index: 1000;
-        padding: 20px 0px;
-    }
-
-    #myLinks a{
-        color: white;
-        padding-top: 10px;
-    }
 
     #topnav a {
         color: black;
         text-decoration: none;
         font-size: 17px;
         display: block;
+    }
+    
+    #myLinks {
+        position: absolute;
+        background-color: #4e4e4e;
+        width: 100%;
+        display: none;
+        top: 60px;
+        z-index: 1000;
+        padding: 20px 0px;
+    }
+    
+
+    #myLinks a{
+        padding-top: 10px;
+        color: aliceblue;
     }
     
     
@@ -311,22 +319,26 @@ button{
         margin-left: 30px;
     }
 
-    .Portfolio-continer{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        gap: 50px;
-    }
-
     .hero__wrapper--right {
         position: absolute;
         left: 25%;
-        top: 300px;
+        top: 450px;
         display: flex;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .hero__wrapper h2{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .hero__wrapper p{
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+
 
     .Portfolio-continer{
         gap: 20px;
@@ -346,22 +358,62 @@ button{
         width: 70%;
     }
 
+    .hero__wrapper{
+        height: 850px;
+    }
+
     .hero__wrapper--right {
         position: absolute;
-        left: 12%;
-        top: 300px;
+        left: 16%;
+        top: 350px;
         display: flex;
+    }
+
+    .uiDesign{
+        height: 405px;
+        width: 530px;
+    }
+
+    .uiDesign-detaile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .uiDesign p{
+        font-size: small;
+    }
+
+    .uiDesign h2{
+        font-size: 16px;
+    }
+
+    .uiDesign h5{
+        font-size: 12px;
+        margin: 7px 0px;
+    }
+
+    .uiDesign p{
+        font-size: 12px;
+    }
+    
+    .Portfolio-continer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        justify-content: center;
+    }
+    button{
+        font-size: medium;
+        padding: 8px;
     }
 }
 
 @media only screen and (max-width: 568px) {
 
-    .Portfolio-continer{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
     .hero__wrapper{
-        min-height: 530px;
+        height: 650px;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -385,16 +437,54 @@ button{
     } 
 
     .hero__wrapper--right{
-        top: 260px;
+        top: 380px;
         left: 25%;
     }
     .hero__wrapper--right img{
         height: 270px;
     }
+
+    .uiDesign{
+        height: 350px;
+        width: 420px;
+    }
+
+    .uiDesign img{
+        position: relative;
+        height: 350px;
+        width: 220px;
+        top: 2px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
 
     .hero__wrapper--right{
-        left: 15%;
+        left: 18%;
+    }
+
+    .project__title h1{
+        font-size: 16px;
+    }
+
+    .uiDesign{
+        height: 250px;
+        width: 300px;
+    }
+
+    .uiDesign img{
+        height: 250px;
+        width: 150px;
+
+    }
+
+    .uiDesign-detaile{
+        padding: 0px 5px;
+    }
+
+    .project img{
+        height: 200px;
+        width: 300px;
     }
 }
