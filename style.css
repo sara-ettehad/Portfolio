@@ -14,6 +14,7 @@ body {
     background-color: white;
     height: 60px;
     z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.19), 0 6px 20px 0 rgba(85, 85, 85, 0.19);
 }
 
 .active{
@@ -102,7 +103,7 @@ h3{
 #links{
     position: fixed;
     background-color:  rgba(215, 194, 193, 0.544);
-    top: 180px;
+    top: 230px;
     left: 30px;
     border-radius: 10px;
 }
@@ -198,10 +199,14 @@ h3{
 
 .project img {
     border-radius: 20px;
-    height: 300px;
+    height: 280px;
     width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
+}
+
+.Visit{
+    width: 150px;
 }
 
 #about {
@@ -229,6 +234,7 @@ footer {
     color: #bc5374;
     text-align: center;
     padding: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.19), 0 6px 20px 0 rgba(85, 85, 85, 0.19);
 }
 
 button{
@@ -246,6 +252,9 @@ button{
     font-size: small;
 }
 
+.graphic img{
+    height: 380px;
+}
 @media only screen and (max-width: 1224px) {
 
     .hero__wrapper{
