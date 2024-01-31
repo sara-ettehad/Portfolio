@@ -52,6 +52,10 @@ img{
     align-items: center;
 }
 
+.sanlow{
+    width: 50%;
+}
+
 .low__fidelity p {
     width: 40%;
 }
@@ -61,6 +65,10 @@ img{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+    .sanlow{
+        width: 100%;
     }
 
     .low__fidelity p {
