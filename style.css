@@ -168,11 +168,14 @@ h3{
 }
 
 .project__title{
+    background-color: rgba(240, 186, 212, 0.371);
     color: #4e4e4e;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .Portfolio-continer{
