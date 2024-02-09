@@ -202,8 +202,8 @@ h3{
 
 .project img {
     border-radius: 20px;
-    height: 280px;
-    width: 400px;
+    height: auto;
+    width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: fill;
 }
@@ -427,6 +427,7 @@ button{
         text-align: center;
         justify-content: center;
     }
+
     button{
         font-size: medium;
         padding: 8px;
@@ -515,11 +516,6 @@ button{
 
     .uiDesign-detaile{
         padding: 0px 5px;
-    }
-
-    .project img{
-        height: 200px;
-        width: 300px;
     }
 }
 @media only screen and (max-width: 400px) {
