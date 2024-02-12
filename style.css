@@ -451,7 +451,7 @@ button{
         padding: 9px;
     }
 
-    .hero__wrapper--left h1{
+    .hero__wrapper--left h2{
         font-size: 10px;
         margin: 0px;
     }
@@ -487,9 +487,7 @@ button{
     }
 }
 @media only screen and (max-width: 440px) {
-    .hero__wrapper--left{
-        width: 40%;
-    }
+    
 
     #hero p{
         font-size: smaller;
