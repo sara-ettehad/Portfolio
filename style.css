@@ -168,7 +168,6 @@ h3{
 }
 
 .project__title{
-    background-color: rgba(240, 186, 212, 0.371);
     color: #4e4e4e;
     display: flex;
     flex-direction: row;
@@ -498,7 +497,7 @@ button{
     }
 
     .project__title h1{
-        font-size: 16px;
+        font-size: xx-large;
     }
 
     .uiDesign{

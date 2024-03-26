@@ -40,6 +40,12 @@
     text-align: center;
 }
 
+.hero__pro {
+    height: 200px;
+    color: #4e4e4e;
+    font-size: xx-large;
+}
+
 img{
     max-width: 100%;
     height: auto;
