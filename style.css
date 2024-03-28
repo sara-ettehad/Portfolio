@@ -484,6 +484,17 @@ button{
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
+    .project__title h1{
+        font-size: large;
+    }
+    .graphic h3{
+        font-size: medium;
+    }
+
+    .project h3{
+        font-size: medium;
+    }
 }
 @media only screen and (max-width: 440px) {
     
